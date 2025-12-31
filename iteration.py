@@ -7,3 +7,8 @@ arr=np.array([[1,2,3],
 for x in np.nditer(arr):
     print(x, "\t",end="")
 
+print()
+
+for x in np.nditer(arr,flags=["buffered"],op_dtypes=['S']):
+    print(x)
+
